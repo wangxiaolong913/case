@@ -39,6 +39,7 @@ public class OpArray {
 	 */
 	private static void insertArray(int i, int[] array) {
 		// TODO Auto-generated method stub
+		System.out.println("hello world");
 		
 	}
 
