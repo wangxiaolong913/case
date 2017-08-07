@@ -102,27 +102,26 @@ public class OpString {
 		// System.out.println(flag1);
 		// Boolean flag2 = str1.regionMatches(true,6, str2, 7, 5);//忽略大小写
 		// System.out.println(flag2);
-		
+
 		/*
 		 * 十、两种方式创建字符串，并测试性能
 		 */
-////		long startTimeStr = System.currentTimeMillis();//当前时间毫秒数
-//		long startTimeStr = System.nanoTime();
-//		for(int i = 0;i<50000;i++){
-//			String str1 = "helloword";
-//		}
-//		
-//		long endTimeStr =System.nanoTime();
-//		
-//		long startTimeNew = System.nanoTime();
-//		for(int i = 0; i < 50000;i++){
-//			String str2 = new String("hellokitty");
-//		}
-//		
-//		long endTimeNew = System.nanoTime();
-//		System.out.println("String : "+(endTimeStr - startTimeStr)+"微秒");
-//		System.out.println("New : "+(endTimeNew - startTimeNew)+"微秒");
-		
-		
+		// // long startTimeStr = System.currentTimeMillis();//当前时间毫秒数
+		// long startTimeStr = System.nanoTime();
+		// for(int i = 0;i<50000;i++){
+		// String str1 = "helloword";
+		// }
+		//
+		// long endTimeStr =System.nanoTime();
+		//
+		// long startTimeNew = System.nanoTime();
+		// for(int i = 0; i < 50000;i++){
+		// String str2 = new String("hellokitty");
+		// }
+		//
+		// long endTimeNew = System.nanoTime();
+		// System.out.println("String : "+(endTimeStr - startTimeStr)+"微秒");
+		// System.out.println("New : "+(endTimeNew - startTimeNew)+"微秒");
+
 	}
 }
