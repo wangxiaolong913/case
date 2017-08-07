@@ -9,7 +9,10 @@ package case_01;
 
 import java.io.IOException;
 import java.net.InetAddress;
+import java.net.MalformedURLException;
 import java.net.Socket;
+import java.net.URL;
+import java.net.URLConnection;
 import java.net.UnknownHostException;
 
 /**
@@ -17,7 +20,7 @@ import java.net.UnknownHostException;
  *
  */
 public class OpNet {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		/*
 		 * 一、获取指定主机的IP地址
 		 * 
@@ -68,5 +71,27 @@ public class OpNet {
 		// e.printStackTrace();
 		// }
 
+		/*
+		 * 四、获取远程主机文件的大小
+		 */
+		// int size = 0;
+		// // 获取url
+		// URL url = new URL(
+		// "http://www.runoob.com/wp-content/themes/runoob/assets/img/newlogo.png");
+		// // 打开URL连接 openConnection()
+		// URLConnection uconn = url.openConnection();
+		//
+		// // 获取文件大小 getContentLength()
+		// size = uconn.getContentLength();
+		//
+		// if (size < 0) {
+		// System.out.println("无法获取文件大小");
+		// }
+		// System.out.println("文件大小为：" + size + "bytes");
+		//
+		// // 关闭连接 getInputStream().close()
+		// uconn.getInputStream().close();
+		
+		
 	}
 }
