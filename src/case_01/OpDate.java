@@ -62,13 +62,10 @@ public class OpDate {
 		/*
 		 * 四、时间戳转换为时间
 		 */
-		// long timeStamp = System.currentTimeMillis();
-		// // String sdf = new
-		// SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new
-		// Date(Long.parseLong(String.valueOf(timeStamp))));
-		// String sdf = new
-		// SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(timeStamp);
-		// System.out.println(sdf);
+//		 long timeStamp = System.currentTimeMillis();
+//		 String sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date(Long.parseLong(String.valueOf(timeStamp))));
+//		 String sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(timeStamp);
+//		 System.out.println(sdf);
 				
 	}
 }
