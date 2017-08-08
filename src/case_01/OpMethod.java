@@ -13,7 +13,7 @@ import java.util.Vector;
 /**
  * @author wang.xiaolong
  *
- */
+ */ 
 public class OpMethod {
 
 	/*

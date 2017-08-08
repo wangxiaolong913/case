@@ -84,7 +84,7 @@ public class OpCollection {
 		// Iterator itr = c1.iterator();
 		// while (itr.hasNext()) {// hasNext()检查序列中是否还有元素
 		// System.out.println(itr.next());// 获得序列中的下一个元素
-		// }
+		// } 
 
 		/*
 		 * 四、集合反转 reverse()

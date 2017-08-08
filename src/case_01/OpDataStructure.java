@@ -18,7 +18,7 @@ import java.util.Vector;
 
 /**
  * @author wang.xiaolong
- */
+ */ 
 public class OpDataStructure {
 	/*
 	 * 链表是一种数据的存储方式，其保存的数据在内存中是不连续的，采用指针对数据进行访问;

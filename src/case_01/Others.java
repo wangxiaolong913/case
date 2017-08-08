@@ -379,7 +379,7 @@ public class Others extends Thread {
 //
 //	public void consumer(int num) {
 //		others.consumer(num);
-//	}
+//	} 
 //
 //	public int getNum() {
 //		return num;

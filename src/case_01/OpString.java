@@ -12,7 +12,7 @@ package case_01;
  *
  */
 public class OpString {
-	/*
+	/* 
 	 * 三、removeChart()
 	 */
 	// public static String removeChart(String str,int index){
