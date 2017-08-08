@@ -13,9 +13,11 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.InetAddress;
 import java.net.MalformedURLException;
+import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.URL;
 import java.net.URLConnection;
@@ -193,5 +195,10 @@ public class OpNet {
 		// System.out.println("文件名是：" + url.getFile());
 		// System.out.println("主机是：" + url.getHost());
 
+		/*
+		 * 十一、客户端Socket和服务端ServerSocket通信
+		 * 
+		 * OpNetClient-客户端; OpNetServer-服务端
+		 */
 	}
 }
