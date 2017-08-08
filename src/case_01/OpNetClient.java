@@ -29,6 +29,7 @@ public class OpNetClient {
 			System.out.println("客户端启动...");
 			BufferedReader br = new BufferedReader(new InputStreamReader(s.getInputStream()));
 			BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(s.getOutputStream()));
+			//字符串需要加换行符  \n 才可以读取信息....
 			bw.write("hello\n");
 			bw.flush();
 			

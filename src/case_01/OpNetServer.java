@@ -31,6 +31,7 @@ public class OpNetServer {
 			System.out.println("客户端say:"+msg);
 			
 			BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(s.getOutputStream()));
+			//字符串需要加换行符  \n 才可以读取信息....
 			bw.write("OK\n");
 			bw.flush();
 			
