@@ -1,16 +1,16 @@
 /**
  * @FileName : case_01
  * @author : wang.xiaolong
- * @Date : 2017年8月8日 
+ * @Date : 2017年8月10日 
  * @Description : 
  * @check
  */
-package pattern.FactoryPattern;
+package pattern.AbstractFactoryPattern;
 
 /**
  * @author wang.xiaolong
  *
  */
 public interface Shape {
-	public void draw();
-}	
+	void draw();
+}

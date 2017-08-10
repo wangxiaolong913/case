@@ -1,8 +1,8 @@
 /**
  * @FileName : case_01
  * @author : wang.xiaolong
- * @Date : 2017年8月8日 
- * @Description : 
+ * @Date : 2017年8月10日 
+ * @Description : 工厂模式
  * @check
  */
 package pattern.FactoryPattern;
@@ -13,15 +13,11 @@ package pattern.FactoryPattern;
  */
 public class Main {
 	public static void main(String[] args) {
-		ShapeFactory sf = new ShapeFactory();
-		Shape s1 = sf.getShape("circle");
-		s1.draw();
-
-		Shape s2 = sf.getShape("square");
-		s2.draw();
-
-		Shape s3 = sf.getShape("rectangle");
-		s3.draw();
-
+		HumanFactory hf = new HumanFactory();
+		iHuman ih = hf.getHumanInfo("man");
+		ih.say();
+		
+		iHuman ih2 = hf.getHumanInfo("woman");
+		ih.say();
 	}
 }

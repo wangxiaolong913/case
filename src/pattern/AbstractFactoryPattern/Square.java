@@ -1,25 +1,25 @@
 /**
  * @FileName : case_01
  * @author : wang.xiaolong
- * @Date : 2017年8月8日 
+ * @Date : 2017年8月10日 
  * @Description : 
  * @check
  */
-package pattern.FactoryPattern;
+package pattern.AbstractFactoryPattern;
 
 /**
  * @author wang.xiaolong
  *
  */
-public class Rectangle implements Shape{
+public class Square implements Shape{
 
 	/* (non-Javadoc)
-	 * @see pattern.FactoryPattern.Shape#draw()
+	 * @see pattern.AbstractFactoryPattern.Shape#draw()
 	 */
 	@Override
 	public void draw() {
 		// TODO Auto-generated method stub
-		System.out.println("draw a changfangxing");
+		System.out.println("square");
 	}
 	
 }

@@ -1,25 +1,25 @@
 /**
  * @FileName : case_01
  * @author : wang.xiaolong
- * @Date : 2017年8月8日 
+ * @Date : 2017年8月10日 
  * @Description : 
  * @check
  */
-package pattern.FactoryPattern;
+package pattern.AbstractFactoryPattern;
 
 /**
  * @author wang.xiaolong
  *
  */
-public class Circle implements Shape{
+public class Red implements Color{
 
 	/* (non-Javadoc)
-	 * @see pattern.FactoryPattern.Shape#draw()
+	 * @see pattern.AbstractFactoryPattern.Color#fill()
 	 */
 	@Override
-	public void draw() {
+	public void fill() {
 		// TODO Auto-generated method stub
-		System.out.println("draw a yuanxing");
+		System.out.println("red");
 	}
 	
 }
