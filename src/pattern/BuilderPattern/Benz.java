@@ -14,33 +14,33 @@ import java.util.ArrayList;
  *
  */
 public class Benz extends CarRun{
-	static ArrayList<String> tt ;
+
 	/* (non-Javadoc)
 	 * @see pattern.BuilderPattern.CarRun#start()
 	 */
 	@Override
-	void start() {
+	protected void start() {
 		// TODO Auto-generated method stub
-		System.out.println("benz start...");
+		System.out.println("benz start");
 	}
 
 	/* (non-Javadoc)
 	 * @see pattern.BuilderPattern.CarRun#stop()
 	 */
 	@Override
-	void stop() {
+	protected void stop() {
 		// TODO Auto-generated method stub
-		System.out.println("benz stop...");
+		System.out.println("benz stop");
 	}
 
 	/* (non-Javadoc)
 	 * @see pattern.BuilderPattern.CarRun#alarm()
 	 */
 	@Override
-	void alarm() {
+	protected void alarm() {
 		// TODO Auto-generated method stub
-		System.out.println("benz wuwuwu~!");
+		System.out.println("benz wuwuwu~");
 	}
-
+	
 	
 }

@@ -17,29 +17,29 @@ public class BMW extends CarRun{
 	 * @see pattern.BuilderPattern.CarRun#start()
 	 */
 	@Override
-	void start() {
+	protected void start() {
 		// TODO Auto-generated method stub
-		System.out.println("bmw start...");
+		System.out.println("bmw start");
 	}
 
 	/* (non-Javadoc)
 	 * @see pattern.BuilderPattern.CarRun#stop()
 	 */
 	@Override
-	void stop() {
+	protected void stop() {
 		// TODO Auto-generated method stub
-		System.out.println("bmw stop...");
+		System.out.println("bmw stop");
 	}
 
 	/* (non-Javadoc)
 	 * @see pattern.BuilderPattern.CarRun#alarm()
 	 */
 	@Override
-	void alarm() {
+	protected void alarm() {
 		// TODO Auto-generated method stub
 		System.out.println("bmw oooo~");
 	}
 
-	
+
 
 }

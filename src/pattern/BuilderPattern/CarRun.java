@@ -13,26 +13,32 @@ import java.util.ArrayList;
  * @author wang.xiaolong
  *
  */
+/*
+ * 功能：benz和bmw运行，客户可以创建一个车的类型，并指定车的run顺序
+ */
 public abstract class CarRun {
-	private ArrayList<String> sequence = new ArrayList<String>();
+	public ArrayList<String> sequence = new ArrayList<String>();
 
-	abstract void start();
+	protected abstract void start();
 
-	abstract void stop();
+	protected abstract void stop();
 
-	abstract void alarm();
+	protected abstract void alarm();
 
-	public void run() {
+	final public void run() {
 		for (int i = 0; i < sequence.size(); i++) {
-			String runName = sequence.get(i);
-			if (runName.equalsIgnoreCase("start")) {
+			String acName = sequence.get(i);
+			if (acName.equalsIgnoreCase("start")) {
 				start();
-			} else if (runName.equalsIgnoreCase("stop")) {
+			} else if (acName.equalsIgnoreCase("stop")) {
 				stop();
-
-			} else if (runName.equalsIgnoreCase("alarm")) {
+			} else if (acName.equalsIgnoreCase("alarm")) {
 				alarm();
 			}
 		}
+	}
+
+	final public void getSequence(ArrayList<String> sequence) {
+		this.sequence = sequence;
 	}
 }
