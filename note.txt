@@ -17,10 +17,6 @@ Java多线程基础：
 http://www.cnblogs.com/skywang12345/p/java_threads_category.html
 
 
-java
-this和super：
-http://www.cnblogs.com/hasse/p/5023392.html
-
 线程：
 生产者-消费者
 http://www.cnblogs.com/0201zcr/p/4758533.html
@@ -29,4 +25,4 @@ http://www.cnblogs.com/0201zcr/p/4758533.html
 http://blog.csdn.net/mal327/article/details/7332110
 
 
-java就该这样学
+<<java就该这样学>>
