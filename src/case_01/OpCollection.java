@@ -75,16 +75,15 @@ public class OpCollection {
 		/*
 		 * 三、集合遍历
 		 */
-		// HashMap<String, String> hm = new HashMap<String, String>();
-		// hm.put("k1", "v1");
-		// hm.put("k2", "v2");
-		// hm.put("k3", "v3");
-		// Collection c1 = hm.values();
-		// System.out.println(c1);
-		// Iterator itr = c1.iterator();
-		// while (itr.hasNext()) {// hasNext()检查序列中是否还有元素
-		// System.out.println(itr.next());// 获得序列中的下一个元素
-		// } 
+		HashMap<String, String> hm = new HashMap<String, String>();
+		hm.put("k1", "v1");
+		hm.put("k2", "v2");
+		hm.put("k3", "v3");
+		Collection c1 = hm.values();
+		Iterator itr = c1.iterator();
+		while (itr.hasNext()) {// hasNext()检查序列中是否还有元素
+			System.out.println(itr.next());// 获得序列中的下一个元素
+		}
 
 		/*
 		 * 四、集合反转 reverse()
