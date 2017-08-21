@@ -55,29 +55,31 @@ public class TestThread extends Thread {
 		Date firstTime = new SimpleDateFormat(strDateFormate).parse(sdf);
 		Timer timer = new Timer();
 		
-		//指定一个开始时间
-//		SimpleDateFormat sdf2 = new SimpleDateFormat(strDateFormate);
-//		Date date2 = sdf2.parse("2017-08-21 11:00:00");
-//		timer.scheduleAtFixedRate(new TimerTask() {			
-//			@Override
-//			public void run() {
-//				// TODO Auto-generated method stub
-//				tFun();
-//			}
-//		}, date2, 1*60*1000);
-		
-		timer.schedule(new TimerTask(){
+		//指定一个开始时间 scheduleAtFixedRate()
+		SimpleDateFormat sdf2 = new SimpleDateFormat(strDateFormate);
+		Date date2 = sdf2.parse("2017-08-21 11:00:00");
+		timer.scheduleAtFixedRate(new TimerTask() {
 			private int count;
 			@Override
 			public void run() {
 				this.count++;
+				System.out.println(count);
 				// TODO Auto-generated method stub
 				tFun();
 				if(count == 5){
-					System.out.println("定时器停止");
-					timer.cancel();//中止定时任务
+					System.out.println("中止定时任务");
+					timer.cancel();//cancel()：中止定时任务
 				}
-			}		
-		}, 1*60*1000);
+			}
+		}, firstTime, 1*5*1000);
+		
+		//从当前时间开始 schedule()
+//		timer.schedule(new TimerTask(){
+//			@Override
+//			public void run() {
+//				// TODO Auto-generated method stub
+//				tFun();
+//			}		
+//		}, 1*60*1000);
 	}
 }
