@@ -48,7 +48,7 @@ public class TestThread extends Thread {
 		 * 
 		 * schedule：
 		 * 从当前时间开始计算
-		 */
+		 */  
 		String strDateFormate = "yyyy-MM-dd HH:mm:ss";
 		Date date = new Date();
 		String  sdf = new SimpleDateFormat(strDateFormate).format(date);	
