@@ -41,7 +41,7 @@ public class TestThread extends Thread {
 		 */
 
 		/*
-		 * 一、scheduleAtFixedRate与schedule的区别：
+		 * scheduleAtFixedRate与schedule的区别：
 		 * scheduleAtFixedRate：
 		 * 如：指定开始执行时间为：2017/08/21 10:00:00,当前时间为：2017/08/21 11:00:00,时间间隔为30min
 		 * 那么执行任务从2017/08/21 10:00:00开始计算，而不是从2017/08/21 11:00:00

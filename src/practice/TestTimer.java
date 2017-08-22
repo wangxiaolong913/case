@@ -14,27 +14,51 @@ import java.util.concurrent.TimeUnit;
 /**
  * @author wang.xiaolong
  *
- */  
-public class TestTimer implements Runnable{
+ */
+public class TestTimer implements Runnable {
+	private String threadName;
+	private Thread t;
+	/**
+	 * @param string
+	 */
+	public TestTimer(String threadName) {
+		// TODO Auto-generated constructor stub
+		this.threadName = threadName;
+	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Runnable#run()
 	 */
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
-		ScheduledExecutorService ses = Executors.newSingleThreadScheduledExecutor();
-		ses.scheduleAtFixedRate(start(), 10, 20, TimeUnit.SECONDS);
+		System.out.println("R..."+threadName);
+		for(int i = 4;i>0;i--){
+			System.out.println("Thread:"+threadName+"	"+i);
+			try {
+				Thread.sleep(10);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		System.out.println("Thread:"+threadName+"	exit");
 	}
 
-	public Runnable start(){
-		System.out.println("thread start...");
-		return null;
-	
+	public void start() {
+		System.out.println("Start..."+threadName);
+		if(t == null){
+			t = new Thread(this,threadName);
+			t.start();
+		}
 	}
+
 	public static void main(String[] args) {
-		TestTimer tt = new TestTimer();
-		tt.start();
+		TestTimer tt1 = new TestTimer("ThreadA");
+		tt1.start();
+		TestTimer tt2 = new TestTimer("ThreadB");
+		tt2.start();
 	}
-
 }

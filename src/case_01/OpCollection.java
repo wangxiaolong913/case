@@ -75,15 +75,15 @@ public class OpCollection {
 		/*
 		 * 三、集合遍历
 		 */
-		HashMap<String, String> hm = new HashMap<String, String>();
-		hm.put("k1", "v1");
-		hm.put("k2", "v2");
-		hm.put("k3", "v3");
-		Collection c1 = hm.values();
-		Iterator itr = c1.iterator();
-		while (itr.hasNext()) {// hasNext()检查序列中是否还有元素
-			System.out.println(itr.next());// 获得序列中的下一个元素
-		}
+//		HashMap<String, String> hm = new HashMap<String, String>();
+//		hm.put("k1", "v1");
+//		hm.put("k2", "v2");
+//		hm.put("k3", "v3");
+//		Collection c1 = hm.values();
+//		Iterator itr = c1.iterator();
+//		while (itr.hasNext()) {// hasNext()检查序列中是否还有元素
+//			System.out.println(itr.next());// 获得序列中的下一个元素
+//		}
 
 		/*
 		 * 四、集合反转 reverse()
@@ -104,19 +104,20 @@ public class OpCollection {
 		/*
 		 * 五、删除集合指定元素 remove()
 		 */
-		// HashSet<String> hs = new HashSet<String>();
-		// String str1 = "hello", str2 = "world", str3 = "end", str4 = "hello";
-		// hs.add(str1);
-		// hs.add(str2);
-		// hs.add(str3);
-		// hs.add(str4);
-		// System.out.println(hs);
-		// Iterator<String> it = hs.iterator();
-		// while (it.hasNext()) {//it.haseNext() 集合元素是否遍历完成，是否还有下一个元素
-		// System.out.println(it.next() + " ");//输出集合元素
-		// }
-		// hs.remove(str2);
-		// System.out.println(hs.size());//获取当前集合大小
+		 HashSet<String> hs = new HashSet<String>();
+		 String str1 = "hello", str2 = "world", str3 = "end", str4 = "hello";
+		 hs.add(str1);
+		 hs.add(str2);
+		 hs.add(str3);
+		 hs.add(str4);
+		 System.out.println(hs);
+		 Iterator<String> it = hs.iterator();
+		 while (it.hasNext()) {//it.haseNext() 集合元素是否遍历完成，是否还有下一个元素
+		 System.out.println(it.next() + " ");//输出集合元素
+		 }
+		 hs.remove(str2);
+		 System.out.println(hs);
+		 System.out.println(hs.size());//获取当前集合大小
 
 		/*
 		 * 六、设置集合为只读集合 Collections.unmodifiableSet
