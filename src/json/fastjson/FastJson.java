@@ -11,6 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONArray;
 
 /**
  * @author wang.xiaolong
@@ -46,9 +47,11 @@ public class FastJson {
 		System.out.println(orderlist.get(0).getId());
 		System.out.println(orderlist.get(1).getOrderName());
 	}
+	
 
 	public static void main(String[] args) {
 		// beanToJson();
 		listToJson();
+
 	}
 }
