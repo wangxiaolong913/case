@@ -104,20 +104,20 @@ public class OpCollection {
 		/*
 		 * 五、删除集合指定元素 remove()
 		 */
-		 HashSet<String> hs = new HashSet<String>();
-		 String str1 = "hello", str2 = "world", str3 = "end", str4 = "hello";
-		 hs.add(str1);
-		 hs.add(str2);
-		 hs.add(str3);
-		 hs.add(str4);
-		 System.out.println(hs);
-		 Iterator<String> it = hs.iterator();
-		 while (it.hasNext()) {//it.haseNext() 集合元素是否遍历完成，是否还有下一个元素
-		 System.out.println(it.next() + " ");//输出集合元素
-		 }
-		 hs.remove(str2);
-		 System.out.println(hs);
-		 System.out.println(hs.size());//获取当前集合大小
+//		 HashSet<String> hs = new HashSet<String>();
+//		 String str1 = "hello", str2 = "world", str3 = "end", str4 = "hello";
+//		 hs.add(str1);
+//		 hs.add(str2);
+//		 hs.add(str3);
+//		 hs.add(str4);
+//		 System.out.println(hs);
+//		 Iterator<String> it = hs.iterator();
+//		 while (it.hasNext()) {//it.haseNext() 集合元素是否遍历完成，是否还有下一个元素
+//		 System.out.println(it.next() + " ");//输出集合元素
+//		 }
+//		 hs.remove(str2);
+//		 System.out.println(hs);
+//		 System.out.println(hs.size());//获取当前集合大小
 
 		/*
 		 * 六、设置集合为只读集合 Collections.unmodifiableSet
@@ -173,8 +173,8 @@ public class OpCollection {
 		/*
 		 * 九、List循环移动元素rotate()
 		 */
-		// List list = Arrays.asList("a b c d e".split(" "));
-		// System.out.println(list);
+		 List list = Arrays.asList("a b c d e".split(" "));
+		 System.out.println(list);
 		// Collections.rotate(list, 2);// rotate：旋转、交替.第二个参数为要移动的元素的起始位置
 		// System.out.println(list);
 

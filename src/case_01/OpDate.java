@@ -7,10 +7,13 @@
  */
 package case_01;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
-
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 /**
  * @author wang.xiaolong
  *
@@ -66,6 +69,35 @@ public class OpDate {
 //		 String sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date(Long.parseLong(String.valueOf(timeStamp))));
 //		 String sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(timeStamp);
 //		 System.out.println(sdf);
+		
+//		SimpleDateFormat f = new SimpleDateFormat("yyyy-MM-dd");
+//        Calendar c = Calendar.getInstance();
+//        System.out.println("当前时间:" + f.format(c.getTime()));
+//        c.add(Calendar.MONTH, 6);
+//        System.out.println("半年后:" + f.format(c.getTime()));
+        
+//		Calendar calendar = Calendar.getInstance();
+//		calendar.add(Calendar.MONTH, -3); 
+//		System.out.println();
+		
+
+
+
+		int renewalsdata = 6;
+		String validatetime = "2012-11-10";
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+		Date now = null;
+		try {
+			now = sdf.parse(validatetime);
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		Calendar calendar = Calendar.getInstance();
+		calendar.setTime(now);
+		calendar.add(Calendar.MONTH, renewalsdata);
+		System.out.println(sdf.format(calendar.getTime()));
+		
 				
 	}
 }

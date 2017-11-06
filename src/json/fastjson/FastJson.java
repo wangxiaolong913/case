@@ -27,7 +27,7 @@ public class FastJson {
 
 		// json字符串转化为javabean对象
 		order = JSON.parseObject(jsonStr, OrderEntity.class);
-		System.out.println(order.toString());
+		System.out.println(order.getOrderName());
 	}
 
 	// list
@@ -35,10 +35,10 @@ public class FastJson {
 		// list<javabean>转json
 		OrderEntity order1 = new OrderEntity(1002001, "BaiDuYunVM", "实例");
 //		OrderEntity order2 = new OrderEntity(1002002, "ALiYunVM", "资源");
-		List<OrderEntity> order = new ArrayList<OrderEntity>();
-		order.add(order1);
+		//List<OrderEntity> order = new ArrayList<OrderEntity>();
+	//	order.add(order1);
 //		order.add(order2);
-		System.out.println(order1.getOrderName());
+	//	System.out.println(order1.getOrderName());
 //		String orderString = JSON.toJSONString(order);
 //		// System.out.println(order);
 //
@@ -51,8 +51,8 @@ public class FastJson {
 	
 
 	public static void main(String[] args) {
-		// beanToJson();
-		listToJson();
+		 beanToJson();
+		//listToJson();
 /*		
  * 	遍历json
  * 	parameter={"k1":"v1","k2","v2","k3","v3"}
